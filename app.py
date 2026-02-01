@@ -199,7 +199,7 @@ with col2:
 city = st.selectbox('Select the city where the match is being played', sorted(cities))
 
 # Inputs with validation constraints
-target = st.number_input('Target (runs to chase) — set 0 for first innings', min_value=0, step=1, format='%d')
+target = st.number_input('Target (runs to chase) ', min_value=0, step=1, format='%d')
 col3, col4, col5 = st.columns(3)
 with col3:
     score = st.number_input('Score (current)', min_value=0, step=1, format='%d')
